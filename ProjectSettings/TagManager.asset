@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Boundry
+  - Laser
+  - Enemy
+  - Drone
+  - Ground
+  - Target
+  - Bubble
+  - Rifle
+  - HotbarManager
+  - Shotgun
+  - Fusion
+  - Sniper
+  - Obstacle
+  - Wall
+  - Drone_Gunner
+  - Target 2
+  - Drone_Spawner
+  - Target 3
+  - Volume
+  - Grenade
+  - Pickup
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Mid
+  - Water
+  - UI
+  - Obstacle
+  - Foreground
+  - Player
+  - Enemy
+  - Post Proccessing
+  - Projectile
+  - Drone_Spawner
+  - Background
+  - Pickup
+  - Drone
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background 8
+    uniqueID: 984835613
+    locked: 0
+  - name: Background 7
+    uniqueID: 2710302983
+    locked: 0
+  - name: Background 6
+    uniqueID: 326347163
+    locked: 0
+  - name: Background 5
+    uniqueID: 1573443059
+    locked: 0
+  - name: Background 4
+    uniqueID: 792515067
+    locked: 0
+  - name: Background 3
+    uniqueID: 3212497217
+    locked: 0
+  - name: Background 2
+    uniqueID: 2609058991
+    locked: 0
+  - name: Background 1
+    uniqueID: 2476100367
+    locked: 0
+  - name: 'Background '
+    uniqueID: 284355257
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 3635742091
+    locked: 0
+  - name: Foreground 1
+    uniqueID: 2221446489
+    locked: 0
+  - name: Foreground 2
+    uniqueID: 3444909305
+    locked: 0
+  - name: Foreground 3
+    uniqueID: 3797727329
+    locked: 0
+  - name: Foreground 4
+    uniqueID: 1202060293
+    locked: 0
+  - name: Foreground 5
+    uniqueID: 3682988745
+    locked: 0
+  - name: Foreground 6
+    uniqueID: 4276348095
+    locked: 0
+  - name: Foreground 7
+    uniqueID: 2850153317
+    locked: 0
+  - name: Foreground 8
+    uniqueID: 2510961691
+    locked: 0
