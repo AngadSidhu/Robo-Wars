@@ -54,7 +54,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private IEnumerator Wave1 ()
+    private IEnumerator Wave1()
     {
         StartCoroutine(spawnEnemy(droneInterval, drone));
         Reposition();
@@ -67,12 +67,11 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator Wave2()
     {
-        StartCoroutine(spawnEnemy(droneGunnerInterval, droneGunner));
-        StartCoroutine(spawnEnemy(droneGunnerInterval, droneGunner));
-        StartCoroutine(spawnEnemy(droneInterval, drone));
-        yield return new WaitForSeconds(60);
+        StartCoroutine(spawnEnemy(riflemanInterval, rifleman));
+        yield return new WaitForSeconds(100);
         StopAllCoroutines();
         delay = true;
+
         StartCoroutine(Wave3());
     }
     private IEnumerator Wave3()
@@ -88,10 +87,8 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator Wave4()
     {
-        StartCoroutine(spawnEnemy(droneSpawnerInterval, droneSpawner));
-        StartCoroutine(spawnEnemy(droneSpawnerInterval, droneSpawner));
-        StartCoroutine(spawnEnemy(droneGunnerInterval, droneGunner));
-        yield return new WaitForSeconds(140);
+        StartCoroutine(spawnEnemy(shotgunInterval, shotgunner));
+        yield return new WaitForSeconds(100);
         StopAllCoroutines();
         delay = true;
         StartCoroutine(Wave5());
@@ -111,7 +108,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator Wave6()
     {
-        StartCoroutine(spawnEnemy(riflemanInterval, rifleman));
+        StartCoroutine(spawnEnemy(fusioneerInterval, fusioneer));
         yield return new WaitForSeconds(100);
         StopAllCoroutines();
         delay = true;
@@ -120,8 +117,10 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator Wave7()
     {
-        StartCoroutine(spawnEnemy(shotgunInterval, shotgunner));
-        yield return new WaitForSeconds(100);
+        StartCoroutine(spawnEnemy(droneSpawnerInterval, droneSpawner));
+        StartCoroutine(spawnEnemy(droneSpawnerInterval, droneSpawner));
+        StartCoroutine(spawnEnemy(droneGunnerInterval, droneGunner));
+        yield return new WaitForSeconds(140);
         StopAllCoroutines();
         delay = true;
         StartCoroutine(Wave8());
@@ -129,17 +128,19 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator Wave8()
     {
-        StartCoroutine(spawnEnemy(fusioneerInterval, fusioneer));
+        StartCoroutine(spawnEnemy(sniperInterval, sniper));
         yield return new WaitForSeconds(100);
         StopAllCoroutines();
         delay = true;
         StartCoroutine(Wave9());
     }
-    
+
     private IEnumerator Wave9()
     {
-        StartCoroutine(spawnEnemy(sniperInterval, sniper));
-        yield return new WaitForSeconds(100);
+        StartCoroutine(spawnEnemy(droneGunnerInterval, droneGunner));
+        StartCoroutine(spawnEnemy(droneGunnerInterval, droneGunner));
+        StartCoroutine(spawnEnemy(droneInterval, drone));
+        yield return new WaitForSeconds(60);
         StopAllCoroutines();
         delay = true;
         StartCoroutine(Wave10());

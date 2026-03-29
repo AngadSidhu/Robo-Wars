@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy_Shooting : MonoBehaviour
 {
     [SerializeField] private Enemy shooting;
+    private Enemy_Aim enemyAim;
     public bool reloading = false;
     private float ammo;
     public bool canShoot = true;
@@ -37,6 +38,8 @@ public class Enemy_Shooting : MonoBehaviour
 
     private void Start()
     {
+        enemyAim = gameObject.GetComponentInChildren<Enemy_Aim>();
+        Debug.Log(enemyAim != null);
         if (rifleman)
         {
             ammo = 30;
@@ -91,6 +94,8 @@ public class Enemy_Shooting : MonoBehaviour
 
     private IEnumerator Shoot()
     {
+        Debug.Log("shot");
+        enemyAim.AimGun();
         if (rifleman && FirePoint != null)
         {
             Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);

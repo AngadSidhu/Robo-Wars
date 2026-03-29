@@ -11,7 +11,7 @@ public class Enemy_Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = Quaternion.Euler(0, 0, 0 + Random.Range(-7.5f, 7.5f)) * transform.position;
+        //transform.position = Quaternion.Euler(0, 0, 0 + Random.Range(-7.5f, 7.5f)) * transform.position;
         rb.velocity = transform.up * speed;
         StartCoroutine(Lifetime());
     }

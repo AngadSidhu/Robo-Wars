@@ -37,9 +37,13 @@ public class Enemy_Aim : MonoBehaviour
                 StartCoroutine(Die());
             }
         }
-        Vector2 direction = new Vector2(player.position.x - transform.position.x, (player.position.y - transform.position.y));
-        transform.up = direction;
         Flip();
+    }
+
+    public void AimGun()
+    {
+        Vector2 direction = new Vector2(player.position.x - transform.position.x, player.position.y - transform.position.y + Random.Range(-0.3f, 0.3f));
+        transform.up = direction;
     }
 
     private void Flip()
