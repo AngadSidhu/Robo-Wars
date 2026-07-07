@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 About
+## About
 
 Robo-Wars was my **first published Unity game**, created as a practice project to gain hands-on experience with game development. The game served as a sandbox for experimenting with Unity features, lighting, asset management, and simple gameplay logic.
 
@@ -14,7 +14,7 @@ PLAY HERE: https://pesky-t6.itch.io/robo-wars
 
 ---
 
-## 🎮 Key Features
+## Key Features
 
 - Built using the **Unity game engine**
 - Core gameplay mechanics (movement, interactions, game state management)
@@ -25,7 +25,7 @@ PLAY HERE: https://pesky-t6.itch.io/robo-wars
 
 ---
 
-## 🧠 Technical Highlights
+## Technical Highlights
 
 | Technology | Details |
 |----------|---------|
@@ -36,7 +36,7 @@ PLAY HERE: https://pesky-t6.itch.io/robo-wars
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```text
 Assets/                 # Game assets (scripts, prefabs, scenes, materials)
@@ -49,7 +49,7 @@ README.md               # Project documentation
 ```
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
 To explore or run the project locally:
 
@@ -65,7 +65,7 @@ To explore or run the project locally:
 
 ### Run the Game
 - Open the main scene from the Assets/ folder
-- Press ▶️ Play in the Unity Editor
+- Press Play in the Unity Editor
 
 ### Build the Game (Optional)
 - Go to File → Build Settings
@@ -74,7 +74,7 @@ To explore or run the project locally:
 
 ---
 
-## 📌 Notes
+## Notes
 
 - This project was developed primarily for learning and experimentation
 - It intentionally retains early-stage design decisions
@@ -83,7 +83,7 @@ To explore or run the project locally:
 
 ---
 
-## 📈 What This Project Demonstrates
+## What This Project Demonstrates
 
 - Experience working within a professional game engine
 - Understanding of Unity project structure and workflows
@@ -93,7 +93,7 @@ To explore or run the project locally:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 This is a personal project, but suggestions and feedback are welcome.
 Feel free to open issues or submit pull requests.
 
